@@ -5,6 +5,9 @@
  */
 
 /* my styles */
+#findOut{
+    border-radius: 10px;
+}
 .divColor{
     background-color: #FFE5D6;
 }
@@ -16,6 +19,9 @@
 }
 .babyPowder{
     color:#FBFEFB;
+}
+#babyPowder{
+  color:#FBFEFB;
 }
 .lilac{
     color:#EADAF2;
