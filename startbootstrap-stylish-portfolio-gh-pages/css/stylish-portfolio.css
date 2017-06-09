@@ -5,6 +5,10 @@
  */
 
 /* my styles */
+
+a:hover{
+    opacity:.5;
+}
 #findOut{
     border-radius: 10px;
 }
@@ -47,6 +51,10 @@
     font-family: 'Sacramento', cursive;
     font-weight:800;
     font-size: 2.5em;
+}
+
+.roundedBorder{
+    border-radius:8px;
 }
 
 

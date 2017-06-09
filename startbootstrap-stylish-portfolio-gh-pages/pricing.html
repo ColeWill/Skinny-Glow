@@ -31,9 +31,22 @@
 
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
+<a style="position:fixed;left:10px;" href="index.html">
+    <i class="fa fa-home lilac fa-4x" aria-hidden="true"></i>
+</a>
  <!-- About -->
     <section id="about" class="about">
         <div class="container">
@@ -65,7 +78,7 @@
                     transformation? Then The Skinny Glow is the package for you. Not only will you be looking skinny and feeling amazing but you will be glowing from the inside out. Because when you feel confident in your own skin you literally GLOW. Friends and family will be wondering what your secret is and you'll tell them I've got the Skinny Glow!"</p>    
                      <p><strong>$999.00 Package Total</strong></p><br> 
                      </div> 
-                    <a href="#" class="btn btn-lg btn-dark">Deal $749</a>
+                    <a style="border-radius:8px;" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#myModal">Deal $749</a>
                 </div>
             </div>
         </div>
@@ -88,7 +101,7 @@
                     <p>"This is the perfect package for anyone who is on the fence about Laser Lipo. The 1 Month Makeover is enough sessions for you to see/feel results. You will feel leaner and refreshed after the month and will no longer be on the fence about Laser Lipo. You will be a believer forever!"</p>    
                      <p><strong>$588.00 Package Total</strong></p><br>  
                      </div>
-                    <a href="#" class="btn btn-lg btn-dark">Deal $470.00
+                    <a style="border-radius:8px;" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#myModal">Deal $470.00
                     </a>
                 </div>
             </div>
@@ -113,7 +126,7 @@
                     
                      <p><strong>$340.00 Package Total</strong></p><br>  
                      </div>
-                    <a href="#" class="btn btn-lg btn-dark">Deal $149.00</a>
+                    <a style="border-radius:8px;"class="btn btn-lg btn-dark" data-toggle="modal" data-target="#myModal">Deal $149.00</a>
                 </div>
             </div>
         </div>
@@ -136,7 +149,7 @@
 
                      <p><strong>$198.00 Package Total</strong></p><br> 
                      </div> 
-                    <a href="#" class="btn btn-lg btn-dark">Deal $99.00</a>
+                    <a style="border-radius:8px;" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#myModal">Deal $99.00</a>
                 </div>
             </div>
             <!-- /.row -->
@@ -144,7 +157,82 @@
         <!-- /.container -->
     </section>
 
-   
+    <div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+ <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Set Up a Session!</h4>
+        </div>
+        <div class="modal-body">
+          <div id="contact" class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                
+                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x lilac"></i>
+                                <i class="fa fa-magic babyPowder"></i>
+                            </span>
+                    <h4 class="cursiveSmall"><strong>Skinny Glow</strong>
+                    </h4>
+                    <p>7148 East County Line Road Studio 10
+                        <br>Highlands Ranch, CO 80126
+                        </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-2x lilac"></i> <span class="cursiveSmall">(720) 451-3178</span></li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="info@skinnyglowlipo.com">info@skinnyglowlipo.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/skinnyglowlipo/">
+                            <img style="padding-left:20px;" src="img/fbook-outline.png" width="80px" heigth="80px"><!-- <i class="fa fa-facebook fa-fw fa-3x"></i> --></a>
+                        </li>
+                        <li>
+                          <!--   <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a> -->
+                        </li>
+                        <li>
+                            <!-- <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a> -->
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Skinny Glow Lipo 2017</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+  <!--  <script>
+   $(document).ready(function(){
+        $('a').on('click', function(){
+            console.log('click happened!');
+var popUp = '<img src="img/contactpop.png">';
+             console.log(popUp);
+             
+             $('body').append(popUp);
+        });
+   });
+   </script> -->
+
 
 </body>
 
