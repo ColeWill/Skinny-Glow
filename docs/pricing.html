@@ -165,45 +165,53 @@
  <!--  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 
   <!-- Modal -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="close" data-dismiss="modal" type="button">&times;</button>
-                    <h4 class="modal-title">Set Up a Session!</h4>
+                    <h4 class="modal-title lilac">Set Up a Session!</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="container" id="contact">
-                        <div class="row">
-                            <div class="col-lg-10 col-lg-offset-1 text-center">
-                                <span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x lilac"></i> <i class="fa fa-magic babyPowder"></i></span>
-                                <h4 class="cursiveSmall"><strong>Skinny Glow Lipo</strong></h4>
-                                <p>7148 East County Line Road Studio 10<br>
-                                Highlands Ranch, CO 80126</p>
-                                <ul class="list-unstyled">
-                                    <li><i class="fa fa-phone fa-2x lilac"></i> <span class="cursiveSmall">(720) 451-3178</span></li>
-                                    <li><span style="font-size:1.3em;"><i class="fa fa-envelope-o fa-fw"></i> <a href="info@skinnyglowlipo.com">info@skinnyglowlipo.com</a></span></li>
-                                    <li style="list-style: none"><span style="font-size:1.3em;"></span></li>
-                                </ul><br>
-                                <ul class="list-inline">
-                                    <li>
-                                        <a href="https://www.facebook.com/skinnyglowlipo/"><img src="img/fbook-outline.png" style="padding-left:20px;" width="80px"><!-- <i class="fa fa-facebook fa-fw fa-3x"></i> --></a>
-                                    </li>
-                                    <li><!--   <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a> --></li>
-                                    <li><!-- <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a> --></li>
-                                </ul>
-                                <hr class="small">
-                                <p class="text-muted">Copyright &copy; Skinny Glow Lipo 2017</p>
+                    <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x lilac"></i>
+                                <i class="fa fa-magic babyPowder"></i>
+                </span>
+                
+                    <h4 class="cursiveSmall"><strong>Skinny Glow Lipo</strong></h4>
+                   
+                        <i class="fa fa-envelope-o fa-fw"></i> <a href="info@skinnyglowlipo.com">info@skinnyglowlipo.com</a>
+                        
+                    <div class="leftHalf">
+                    <p class="textChange" style="color:white;font-size:2em;">Drop Me A Line!</p>
+                    <form action="http://formspree.io/info@skinnyglowlipo.com" id="contact-form" method="post" name="contact-form">
+                       <!--  <div class="row"> -->
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+                                <div class="form-group">
+                                    <label for="form_email" style="font-size:1em;">Email *</label> <input class="form-control" data-error="Valid email is required." id="form_email" name="email" placeholder="your email" required="required" type="email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+                                <div class="form-group">
+                                    <label for="form_message" style="font-size:1em;">Message</label> 
+                                    <textarea class="form-control" data-error="Please,leave us a message." id="form_message" name="message" placeholder="Heartfelt message..." required="required" rows="4"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <!-- <div class="row"> -->
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input class="btn btn-success btn-send" type="submit" value="Send message">
                             </div>
-                        </div>
-                    </div>
+                        <!-- </div> -->
+                        <div class="col-md-12"></div>
+                    </form>
+                </div >
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
